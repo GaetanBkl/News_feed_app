@@ -20,7 +20,7 @@ Chargez l'application dans le dossier /news_feed :
 
 Lancez le serveur dans le dossier /news_feed_backend
 
-*node server.js
+* node server.js
 
 Rendez-vous alors sur la page possédant l'adresse : http://localhost:3000/ 
 C'est là que vous pourrez visualiser notre application
