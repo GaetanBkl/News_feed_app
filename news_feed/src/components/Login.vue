@@ -2,9 +2,9 @@
     <div>
         <h2>Identifiez-vous</h2>
         <form v-on:submit="login">
-            <input type="text" name="email"/><br>
-            <input type="password" name="password"/><br>
-            <input type="submit" value="Login"/>
+            <input type="text" name="email" class="inp"/><br>
+            <input type="password" name="password" class="inp"/><br>
+            <input type="submit" value="Login" class="inp"/>
         </form>
     </div>
 </template>
@@ -38,3 +38,14 @@ export default {
   }
 }
 </script>
+
+<style>
+.inp {
+  border-style: solid;
+  border-color: #80808059;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 3px 0px;
+  background-color: rgb(250, 255, 255);
+}
+
+</style>

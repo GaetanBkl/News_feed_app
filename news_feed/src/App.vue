@@ -1,6 +1,7 @@
 <template>
   <v-app light>
-    <img src="./assets/logo.png">
+    <img src="./assets/logoweb.png" style="
+    max-width: 20%;margin-left: 40%;">
             <div>
             <router-link :to="{ name: 'Accueil'}">Accueil</router-link>
             <router-link :to="{ name: 'Login'}">Connexion</router-link>
@@ -9,8 +10,7 @@
     <router-view/>
     <navigation v-if="['Accueil'].includes($route.name)">
       <v-toolbar fixed app light clipped-left color="primary" class="elevation-2">
-    <v-toolbar-side-icon @click="drawer = !drawer" class="white--text"></v-toolbar-side-icon>
-    <v-toolbar-title class="white--text">News Feed</v-toolbar-title>
+    <v-toolbar-title class="white--text">TechCrunch News Feed</v-toolbar-title>
   </v-toolbar>
   <v-content>
     <v-container fluid>
@@ -20,12 +20,6 @@
    <v-footer class="secondary" app>
 <v-layout row wrap align-center>
         <v-flex xs12>
-          <div class="white--text ml-3">
-            Made with
-            <v-icon class="red--text">favorite</v-icon>
-            by <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-            and <a class="white--text" href="https://github.com/rachidsakara" target="_blank">Rachid Sakara</a>
-          </div>
         </v-flex>
       </v-layout>
     </v-footer>
@@ -81,6 +75,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: #8ec3ff33;
 }
 </style>
